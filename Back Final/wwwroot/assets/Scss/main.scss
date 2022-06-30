@@ -1,0 +1,254 @@
+body{
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(29, 28, 28);
+    
+    
+    .NavBar{
+      align-items: center;
+        .icon{ 
+             margin-top: 5px;
+            a{
+                height: 400px;
+                color: rgb(157, 157, 157);
+                text-decoration: none;
+                font-size: 18px;
+                padding-left: 10px;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        .navLink{
+            
+
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                li{
+                     margin-top: 5px;
+                    list-style: none;
+                a{
+                    text-decoration: none;
+                    color: rgb(157, 157, 157);
+                    &:hover{
+                        color: white;
+                    }
+                }
+
+                }
+            }
+        }
+        
+    }
+}
+main{
+    .hero{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-image: url(../img/5.jpg);
+        height: 800px;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        .text{
+            h4{
+                font-size: 40px;
+                
+            }
+            h1{
+                font-size: 75px;
+                
+            }
+            button{
+                color: rgb(255, 255, 255);
+
+
+            }
+        }
+    }
+    .Services{
+        margin-top: 120px;
+        height: auto;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .title{
+            h3{
+                color: rgb(54, 128, 193);
+                font-size: 40px;
+            }
+            p{
+                font-size: 16px;
+                color: rgb(119, 119, 119);
+            }
+
+        }
+        .Area{
+            .icon{
+                i{
+                    background-color: rgb(54, 128, 193);
+                    border-radius: 50%;
+                    background-size: 150px;
+                    font-size: 80px;
+                    padding:25px;
+                    color: white;
+                    
+
+                }
+            }
+            h5{
+                color: rgb(51, 51, 51);
+                font-size: 18px;
+            }
+            p{
+                color: rgb(119, 119, 119);
+                font-size: 14px;
+
+
+            }
+        }
+    }
+    .About{
+        margin-top: 70px;
+        .title{
+            text-align: center;
+            h2{
+            color:  rgb(54, 128, 193);
+            font-size: 40px;
+            }
+            p{
+                color:  rgb(157, 157, 157);
+            }
+        }
+        img{
+            border: solid 4px rgb(119, 119, 119);
+            border-radius: 50%;
+                height: 150px;
+                text-align: center;
+        }
+        .Img{
+            display: flex;
+            justify-content: center;
+        }
+        .End{
+            text-align: end;
+        }
+        h5{
+            color: rgb(54, 128, 193);
+        }
+        p{
+            color: rgb(119, 119, 119);
+            
+        }
+        .col-lg-12{
+            margin-top: 30px;
+        }
+        .EndText{
+            display: flex;
+            justify-content: center;
+            h4{
+            
+                border-radius: 50%;
+                background-color: rgb(54, 128, 193);
+            color: white;
+            font-size: 18px;
+            padding: 40px;
+            border:solid 4px rgb(157, 157, 157);
+            
+            }
+        }
+    }
+    .Team{
+        background-color: rgb(188, 206, 164);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        height: auto;
+        
+        h4{
+            color: rgb(54, 128, 193);
+            margin-top: 50px;
+            
+        }
+        p{
+            color: rgb(157, 157, 157);
+        }
+        .col-lg-4{
+            margin-top: 30px;
+            
+            .Person{
+                
+                justify-content: space-around;
+                margin-left: 50px;
+            }
+            img{
+                border-radius: 50%;
+                height: 120px;
+            }
+            .icon{
+                display: flex;
+                justify-content: space-evenly;
+                i{
+                    color: white;
+                    background-color: rgb(29, 28, 28);
+                    padding: 20px;
+                    border-radius: 50%;
+                    &:hover{
+                        background-color: rgb(54, 128, 193);
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    
+    .ContactUs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        background-color: rgb(29, 28, 28);
+        text-align: center;
+        h3{
+            font-size: 40px;
+            color: rgb(54, 128, 193);
+
+        }
+        p{
+            color: rgb(157, 157, 157);
+            font: italic;
+        }
+        input,textarea{
+            margin-top: 30px;
+        }
+    }
+    
+    .NetWorks{
+        height: 300px;
+        p{
+            margin-top: 30px;
+            color: rgb(54, 128, 193);
+        }
+        text-align: center;
+        i{
+            background-color: rgb(29, 28, 28);
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 50%;
+            &:hover{
+                background-color: rgb(54, 128, 193);
+            }
+        }
+    }
+}
+

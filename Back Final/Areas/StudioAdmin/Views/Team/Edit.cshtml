@@ -1,0 +1,16 @@
+﻿
+@model Teams
+<form method="post">
+    <lable>Name:</lable>
+    <input asp-for="Name" type="text" class="form-control" placeholder="Name" />
+    <br /><span asp-validation-for="Name"></span>
+    <lable>Position:</lable>
+    <input asp-for="Position" type="text" class="form-control" placeholder="Position" />
+    <br /><span asp-validation-for="Position"></span>
+    <lable>Image:</lable>
+    <input asp-for="Image" type="file" class="form-control" placeholder="Image" />
+    <br /><span asp-validation-for="Image"></span>
+    <div class="mt-4">
+        <button class="btn btn-primary" type="submit">Edut</button>
+    </div>
+</form>

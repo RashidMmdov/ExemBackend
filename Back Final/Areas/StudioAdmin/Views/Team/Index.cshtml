@@ -1,0 +1,56 @@
+﻿@using Back_Final.Models;
+@model List<Teams>
+
+    <a class="btn btn-success text-light" asp-controller="Team" asp-action="Create">Create New Employers</a>
+    <table class="table table-dark mt-4">
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Position
+                </th>
+                <th>
+                    Settings
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Teams item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        <img src="~/assets/img/@item.Image" alt="">
+
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.Position
+
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <a class="btn btn-primary" asp-controller="Team" asp-action="Deteil" asp-route-id="@item.Id" ><i class="mdi mdi-account-card-details"></i></a>
+                            <a class="btn btn-success" asp-controller="Team" asp-action="Edit" asp-route-id="@item.Id"><i class="mdi mdi-tooltip-edit"></i></a>
+                            <a class="btn btn-danger" asp-controller="Team" asp-action="Delete" asp-route-id="@item.Id"><i class="mdi mdi-delete"></i></a>
+
+                        </div>
+
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/assets/Scss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="NavBar">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="icon">
+                        <a href="">Studio</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="navLink">
+
+                        <ul class="Main">
+
+
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfilo</a></li>
+                            <li><a href="">About</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a>@User.Identity.Name</a></li>
+                                <li><a asp-controller="Accaunt" asp-action="Logout">LogOut</a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-controller="Accaunt" asp-action="LogIn">Log In</a></li>
+                                <li><a asp-controller="Accaunt" asp-action="Register">Register</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <section class="=Contact">
+            <div class="ContactUs">
+                <div class="FormAndTitle">
+                    <div class="title">
+                        <h3>CONTACT US</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+
+                    <form action="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" placeholder="YOUR NAME*">
+                                    <input type="email" class="form-control" placeholder="YOUR Email*">
+
+                                    <input type="tel" class="form-control" placeholder="YOUR PHONE*">
+                                </div>
+                                <div class="col-lg-6">
+                                    <textarea name="" class="form-control" placeholder="MESSAGES*" id="" cols="30"
+                                              rows="7"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary mt-5">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </section>
+        <div class="NetWorks">
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Copyright © All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

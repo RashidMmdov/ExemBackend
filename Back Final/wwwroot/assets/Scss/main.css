@@ -1,0 +1,300 @@
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #1d1c1c;
+}
+
+header .NavBar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .NavBar .icon {
+  margin-top: 5px;
+}
+
+header .NavBar .icon a {
+  height: 400px;
+  color: #9d9d9d;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+header .NavBar .icon a:hover {
+  color: white;
+}
+
+header .NavBar .navLink ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .NavBar .navLink ul li {
+  margin-top: 5px;
+  list-style: none;
+}
+
+header .NavBar .navLink ul li a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+header .NavBar .navLink ul li a:hover {
+  color: white;
+}
+
+main .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url(../img/5.jpg);
+  height: 800px;
+  background-position: center;
+  color: white;
+}
+
+main .hero .text h4 {
+  font-size: 40px;
+}
+
+main .hero .text h1 {
+  font-size: 75px;
+}
+
+main .hero .text button {
+  color: white;
+}
+
+main .Services {
+  margin-top: 120px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main .Services .title h3 {
+  color: #3680c1;
+  font-size: 40px;
+}
+
+main .Services .title p {
+  font-size: 16px;
+  color: #777777;
+}
+
+main .Services .Area .icon i {
+  background-color: #3680c1;
+  border-radius: 50%;
+  background-size: 150px;
+  font-size: 80px;
+  padding: 25px;
+  color: white;
+}
+
+main .Services .Area h5 {
+  color: #333333;
+  font-size: 18px;
+}
+
+main .Services .Area p {
+  color: #777777;
+  font-size: 14px;
+}
+
+main .About {
+  margin-top: 70px;
+}
+
+main .About .title {
+  text-align: center;
+}
+
+main .About .title h2 {
+  color: #3680c1;
+  font-size: 40px;
+}
+
+main .About .title p {
+  color: #9d9d9d;
+}
+
+main .About img {
+  border: solid 4px #777777;
+  border-radius: 50%;
+  height: 150px;
+  text-align: center;
+}
+
+main .About .Img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .About .End {
+  text-align: end;
+}
+
+main .About h5 {
+  color: #3680c1;
+}
+
+main .About p {
+  color: #777777;
+}
+
+main .About .col-lg-12 {
+  margin-top: 30px;
+}
+
+main .About .EndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .About .EndText h4 {
+  border-radius: 50%;
+  background-color: #3680c1;
+  color: white;
+  font-size: 18px;
+  padding: 40px;
+  border: solid 4px #9d9d9d;
+}
+
+main .Team {
+  background-color: #bccea4;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+}
+
+main .Team h4 {
+  color: #3680c1;
+  margin-top: 50px;
+}
+
+main .Team p {
+  color: #9d9d9d;
+}
+
+main .Team .col-lg-4 {
+  margin-top: 30px;
+}
+
+main .Team .col-lg-4 .Person {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 50px;
+}
+
+main .Team .col-lg-4 img {
+  border-radius: 50%;
+  height: 120px;
+}
+
+main .Team .col-lg-4 .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .Team .col-lg-4 .icon i {
+  color: white;
+  background-color: #1d1c1c;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+main .Team .col-lg-4 .icon i:hover {
+  background-color: #3680c1;
+}
+
+footer .ContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  background-color: #1d1c1c;
+  text-align: center;
+}
+
+footer .ContactUs h3 {
+  font-size: 40px;
+  color: #3680c1;
+}
+
+footer .ContactUs p {
+  color: #9d9d9d;
+  font: italic;
+}
+
+footer .ContactUs input, footer .ContactUs textarea {
+  margin-top: 30px;
+}
+
+footer .NetWorks {
+  height: 300px;
+  text-align: center;
+}
+
+footer .NetWorks p {
+  margin-top: 30px;
+  color: #3680c1;
+}
+
+footer .NetWorks i {
+  background-color: #1d1c1c;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+
+footer .NetWorks i:hover {
+  background-color: #3680c1;
+}
+/*# sourceMappingURL=main.css.map */

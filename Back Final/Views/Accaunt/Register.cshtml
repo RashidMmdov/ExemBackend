@@ -1,0 +1,26 @@
+﻿
+@model RegisterVM
+<div class="alert alert-danger" asp-validation-summary="ModelOnly" ></div>
+<form method="post">
+    <lable>FirstName:</lable>
+    <input asp-for="FirstName" class="form-control" /><br />
+    <span asp-validation-for="FirstName"></span>
+    <lable>LastName:</lable>
+    <input asp-for="LastName" class="form-control" /><br />
+    <span asp-validation-for="LastName"></span>
+    <lable>UserName:</lable>
+    <input asp-for="UserName" class="form-control" /><br />
+    <span asp-validation-for="UserName"></span>
+    <lable>Email:</lable>
+    <input asp-for="Email" class="form-control" /><br />
+    <span asp-validation-for="Email"></span>
+    <lable>Password:</lable>
+    <input asp-for="Password" class="form-control" /><br />
+    <span asp-validation-for="Password"></span>
+    <lable>ConfirmPassword:</lable>
+    <input asp-for="ConfirmPassword" class="form-control" /><br />
+    <span asp-validation-for="ConfirmPassword"></span>
+    <div class="mt-4">
+        <button class="btn btn-primary" type="submit">Register</button>
+    </div>
+</form>
